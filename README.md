@@ -19,13 +19,39 @@
 
 
 ~~~ c (lenguaje en el que esta escrito)
-void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
+void loop()
 {
-  digitalWrite(B3,estado3);
-  digitalWrite(B2,estado2);
-  digitalWrite(B1,estado1);
-  digitalWrite(B0,estado0);
+  int temperatura = 0;  
+  //se toma el valor del pin A0
+  lecturaTemperatura = analogRead(A0);
+  
+  Serial.print("\nValor sensor:\n");
+  Serial.print(lecturaTemperatura);
+  delay(1000);
+  
+  //se mapea temperatura
+  temperatura = map(lecturaTemperatura,20,358,-40,125); 
+  if(temperatura > 24)
+  {
+    printDigit('c');
+    switchStateLeds('c');
+  } 
+  else if(temperatura < 0)
+  {
+    printDigit('f');
+    switchStateLeds('f');
+  }
+  else
+  {
+    printDigit('d');
+    switchStateLeds('d');
+  }
+  
+  Serial.print("\nTemperatura:\n");
+  Serial.print(temperatura);
+  delay(1000);
 }
+
 ~~~
 
 ## Link al proyecto
