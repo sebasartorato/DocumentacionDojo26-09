@@ -1,4 +1,4 @@
-# Ejemplo Documentación Dojos Equipo Verde
+# Documentación Dojos Equipo Verde
 ![Tinkercad](./img/ArduinoTinkercad.jpg)
 
 
