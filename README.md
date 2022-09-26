@@ -12,7 +12,7 @@
 ## Proyecto: Empresa Frigorífica.
 
 ## Descripción
--
+- Un sistema que mide la temperatura para una cámara frigorífica indicando la temperatura por el monitor en serie, utilizando un  display 7 segmentos que nos indique el nivel de temperatura
 
 ## Función principal
 -
