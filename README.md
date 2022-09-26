@@ -1,4 +1,4 @@
-# Documentación Dojos Equipo Verde
+# Documentación Dojos Equipo Verde 26-09
 
 ## Integrantes 
 - Alexis Aranda Jara
