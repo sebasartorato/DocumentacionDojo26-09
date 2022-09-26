@@ -1,22 +1,25 @@
-# Ejemplo Documentación Dojos
+# Ejemplo Documentación Dojos Equipo Verde
 ![Tinkercad](./img/ArduinoTinkercad.jpg)
 
 
 ## Integrantes 
-- Esteban
-- Marcelo
-- Quiroz
-- Dario Cuda
+- Alexis Aranda Jara
+- Sebastian Sartorato
+- Nicolas De Bella
+- Braian Nicolas Acosta Florentin
+- Kervin Briceño
+- Juan Manuel De Larrosa
+- Manuel Gerez
 
-## Proyecto: Contador binario.
+## Proyecto: Empresa Frigorífica.
 ![Tinkercad](./img/ContadorBinario.png)
 
 
 ## Descripción
-En este parrafo deberan describir que funcion cumple su proyecto. Que solucion esta ofreciendo.
+-
 
 ## Función principal
-Esta funcion se encarga de encender y apagar los leds.
+-
 
 B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
 
@@ -33,21 +36,9 @@ void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
 ~~~
 
 ## :robot: Link al proyecto
-- [proyecto](https://www.tinkercad.com/things/aOYiibnDjWu)
+- [proyecto](https://www.tinkercad.com/things/cpsXQ8M7DW7-copy-of-empresa-frigorifica/editel?sharecode=9WF3Xlxy_DZAHYp1vw7OcVmMp6Cvaa7Vk7EJUZnH3Pg)
 ## :tv: Link al video del proceso
-- [video](https://www.youtube.com/watch?v=VyGjE8kx-O0)
-
----
-### Fuentes
-- [Consejos para documentar](https://www.sohamkamani.com/how-to-write-good-documentation/#architecture-documentation).
-
-- [Lenguaje Markdown](https://markdown.es/sintaxis-markdown/#linkauto).
-
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-- [Tutorial](https://www.youtube.com/watch?v=oxaH9CFpeEE).
-
-- [Emojis](https://gist.github.com/rxaviers/7360908).
+- [video]()
 
 ---
 
