@@ -66,7 +66,7 @@ void loop()
 ## Link al proyecto
 - [proyecto](https://www.tinkercad.com/things/cpsXQ8M7DW7-copy-of-empresa-frigorifica/editel?sharecode=9WF3Xlxy_DZAHYp1vw7OcVmMp6Cvaa7Vk7EJUZnH3Pg)
 ## :tv: Link al video del proceso
-- [video]()
+- [video](https://drive.google.com/drive/folders/1MRj4jWe5Wm05Pp3ID7CogIPjEFE7Cxt6)
 
 ---
 
