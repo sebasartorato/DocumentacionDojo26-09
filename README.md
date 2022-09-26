@@ -1,6 +1,4 @@
 # Documentación Dojos Equipo Verde
-![Tinkercad](./img/ArduinoTinkercad.jpg)
-
 
 ## Integrantes 
 - Alexis Aranda Jara
@@ -12,8 +10,6 @@
 - Manuel Gerez
 
 ## Proyecto: Empresa Frigorífica.
-![Tinkercad](./img/ContadorBinario.png)
-
 
 ## Descripción
 -
@@ -35,7 +31,7 @@ void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
 }
 ~~~
 
-## :robot: Link al proyecto
+## Link al proyecto
 - [proyecto](https://www.tinkercad.com/things/cpsXQ8M7DW7-copy-of-empresa-frigorifica/editel?sharecode=9WF3Xlxy_DZAHYp1vw7OcVmMp6Cvaa7Vk7EJUZnH3Pg)
 ## :tv: Link al video del proceso
 - [video]()
