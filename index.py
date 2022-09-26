@@ -1,5 +1,3 @@
-
-
 #define A 12
 #define B 13
 #define C 7
@@ -11,8 +9,10 @@
 #define ledAmarillo 3
 #define ledAzul 2
 #define SENSOR_TEMPERATURA A0
+#define SWITCH A4
 
 int lecturaTemperatura=0;
+int open = 0;
 
 void setup()
 {
@@ -26,41 +26,50 @@ void setup()
   pinMode(ledRojo, OUTPUT);
   pinMode(ledAmarillo, OUTPUT);
   pinMode(ledAzul, OUTPUT);
-  
+  pinMode(SWITCH, INPUT_PULLUP);
   Serial.begin(9600);
 }
 
 void loop()
 {
+  
   int temperatura = 0;  
   //se toma el valor del pin A0
   lecturaTemperatura = analogRead(A0);
+  open = digitalRead(SWITCH);
   
-  Serial.print("\nValor sensor:\n");
-  Serial.print(lecturaTemperatura);
-  delay(1000);
+  if(open == 1){
+  	Serial.print("\nValor sensor:\n");
+  	Serial.print(lecturaTemperatura);
+  	delay(1000);
   
-  //se mapea temperatura
-  temperatura = map(lecturaTemperatura,20,358,-40,125); 
-  if(temperatura > 24)
-  {
-    printDigit('c');
-    switchStateLeds('c');
-  } 
-  else if(temperatura < 0)
-  {
-    printDigit('f');
-    switchStateLeds('f');
+  	//se mapea temperatura
+  	temperatura = map(lecturaTemperatura,20,358,-40,125); 
+  	if(temperatura > 24)
+  	{
+    	printDigit('c');
+    	switchStateLeds('c');
+  	} 
+  	else if(temperatura < 0)
+  	{
+    	printDigit('f');
+    	switchStateLeds('f');
+  	}
+  	else
+  	{
+    	printDigit('d');
+    	switchStateLeds('d');
+  	}
+  
+  	Serial.print("\nTemperatura:\n");
+  	Serial.print(temperatura);
+  	delay(1000);
   }
-  else
-  {
-    printDigit('d');
-    switchStateLeds('d');
+  else{
+    printDigit('o');
+    switchStateLeds('o');
   }
   
-  Serial.print("\nTemperatura:\n");
-  Serial.print(temperatura);
-  delay(1000);
 }
 
 void printDigit(char valor)
@@ -93,6 +102,17 @@ void printDigit(char valor)
     case 'd':
       digitalWrite(G, HIGH);
       break;
+    case 'o':
+  	{
+        digitalWrite(A, LOW);
+  		digitalWrite(B, LOW);
+  		digitalWrite(C, LOW);
+  		digitalWrite(D, LOW);
+  		digitalWrite(E, LOW);
+  		digitalWrite(F, LOW);
+  		digitalWrite(G, LOW);
+      	break;
+  	}
   }
 }
 
@@ -118,5 +138,12 @@ void switchStateLeds(char valor){
         digitalWrite(ledAzul, LOW);
         digitalWrite(ledRojo, LOW);
         break;
+    case 'o':
+  	{
+        digitalWrite(ledAmarillo, LOW);
+  		digitalWrite(ledAzul, LOW);
+  		digitalWrite(ledRojo, LOW);
+      	break;
+  	}
   }
 }
