@@ -15,11 +15,8 @@
 - Un sistema que mide la temperatura para una cámara frigorífica indicando la temperatura por el monitor en serie, utilizando un  display 7 segmentos que nos indique el nivel de temperatura
 
 ## Función principal
--
+- En el loop se mapea la temperatura, si esta da un numero mayor a 24, se prende el led rojo, si la temperatura es menor a 0, es decir, si está fría, se prende el led azul, y si está entre 0 y 24 se prende el led amarillo, si es que está templada.
 
-B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
-
-(Breve explicación de la función)
 
 ~~~ c (lenguaje en el que esta escrito)
 void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
